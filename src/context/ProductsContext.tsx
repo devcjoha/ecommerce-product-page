@@ -95,8 +95,6 @@ export const ProductsProvider = ({ children }: { children: React.ReactNode }) =>
     
     fetchProducts();
   }, [selectedCategory, page]);
-    console.log(selectedCategory);
-    console.log(products);
     
   // Actualiza URL cada vez que cambian los estados
   useEffect(() => {

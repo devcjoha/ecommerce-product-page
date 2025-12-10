@@ -44,7 +44,7 @@ function CheckoutPage() {
           <ul className="flex flex-col items-left ">
             {items.map((i) => (
               <li key={i.product.id} className="leading-5 mb-2 mt-2 grid 
-              grid-cols-[37px_fr_80px_30px] grid-rows-[20px_22px] 
+              grid-cols-[37px_210px_50px_30px] grid-rows-[20px_22px] 
               lg:grid-cols-[50px_300px_80px_80px_80px_80px] lg:grid-rows-1  items-center">
                 {/*Image Product */}
                 <div className="cart-image col-start-1 lg:row-start-1 row-span-2 flex items-center ">

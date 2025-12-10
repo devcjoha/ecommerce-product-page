@@ -29,7 +29,7 @@ function ProductsContent() {
         <button
           onClick={() => setPage(page - 1)}
           disabled={page === 1}
-          className="px-4 py-2 bg-pale-orange rounded disabled:opacity-50"
+          className="px-4 py-2 bg-orange rounded disabled:opacity-50"
         >
           ← Preview
         </button>
@@ -38,7 +38,7 @@ function ProductsContent() {
         <button
           onClick={() => setPage(page + 1)}
           disabled={products.length < limit}
-          className="px-4 py-2 bg-pale-orange rounded disabled:opacity-50"
+          className="px-4 py-2 bg-orange rounded disabled:opacity-50"
         >
           Next →
         </button>
