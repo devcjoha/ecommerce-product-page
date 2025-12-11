@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[73158,["/ecommerce-product-page/_next/static/chunks/1e62c1f1f4c509cb.js","/ecommerce-product-page/_next/static/chunks/243e2362d1d2ff19.js","/ecommerce-product-page/_next/static/chunks/7fa9402f3c138623.js"],"ProductsProvider"]
+3:I[21877,["/ecommerce-product-page/_next/static/chunks/1e62c1f1f4c509cb.js","/ecommerce-product-page/_next/static/chunks/243e2362d1d2ff19.js","/ecommerce-product-page/_next/static/chunks/7fa9402f3c138623.js"],"default"]
+4:I[97367,["/ecommerce-product-page/_next/static/chunks/ff1a16fafef87110.js","/ecommerce-product-page/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+0:{"buildId":"BVkR4cebLtHYVgCTPolMl","rsc":["$","$1","c",{"children":[["$","$L2",null,{"initialCategory":"","initialPage":1,"children":["$","$L3",null,{}]}],[["$","script","script-0",{"src":"/ecommerce-product-page/_next/static/chunks/243e2362d1d2ff19.js","async":true}],["$","script","script-1",{"src":"/ecommerce-product-page/_next/static/chunks/7fa9402f3c138623.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"loading":null,"isPartial":false}
+6:null

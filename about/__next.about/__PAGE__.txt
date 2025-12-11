@@ -1,0 +1,9 @@
+1:"$Sreact.fragment"
+2:I[47257,["/ecommerce-product-page/_next/static/chunks/ff1a16fafef87110.js","/ecommerce-product-page/_next/static/chunks/247eb132b7f7b574.js"],"ClientPageRoot"]
+3:I[60078,["/ecommerce-product-page/_next/static/chunks/1e62c1f1f4c509cb.js","/ecommerce-product-page/_next/static/chunks/2c6a73e006e5d71c.js","/ecommerce-product-page/_next/static/chunks/342fbe0b1ec10799.js"],"default"]
+6:I[97367,["/ecommerce-product-page/_next/static/chunks/ff1a16fafef87110.js","/ecommerce-product-page/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+0:{"buildId":"BVkR4cebLtHYVgCTPolMl","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/ecommerce-product-page/_next/static/chunks/2c6a73e006e5d71c.js","async":true}],["$","script","script-1",{"src":"/ecommerce-product-page/_next/static/chunks/342fbe0b1ec10799.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
+4:{}
+5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
+8:null
