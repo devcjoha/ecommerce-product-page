@@ -1,7 +1,9 @@
 "use client";
 import { createContext, useContext, useState, useEffect, useCallback } from "react";
 import { Product } from "../types/product";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
+
+
 type Category = {
   slug: string;
   name: string;
@@ -41,15 +43,23 @@ const ProductsContext = createContext<ProductContextType>({
     throw new Error("ProductsProvider missing: setPage");
   },
 });
-
-export const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
+type ProductsProviderProps = {
+  children: React.ReactNode;
+  initialCategory?: string;
+  initialPage?: number;
+};
+export const ProductsProvider = ({
+  children,
+  initialCategory = "",
+  initialPage = 1,
+}: ProductsProviderProps) => {
   const router = useRouter();
-  const searchParams = useSearchParams();
+  // const searchParams = useSearchParams();
 
   const [products, setProducts] = useState<Product[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
-  const [selectedCategory, setSelectedCategoryState] = useState("");
-  const [page, setPageState] = useState(1);
+  const [selectedCategory, setSelectedCategoryState] = useState(initialCategory);
+  const [page, setPageState] = useState(initialPage);
   const [error, setError] = useState<string | null>(null);
   const [statusCode, setStatusCode] = useState<number | null>(null);
   const [loading, setLoading] = useState(false);
@@ -113,17 +123,8 @@ export const ProductsProvider = ({ children }: { children: React.ReactNode }) =>
   const setPage = useCallback((nextPage: number) => {
     setPageState(nextPage);
   }, []);
-
-  // Al montar, lee los query params
- useEffect(() => {
-   const categoryParam = searchParams.get("category");
-   const pageParam = searchParams.get("page");
-
-   if (categoryParam) setSelectedCategoryState(categoryParam);
-   if (pageParam) setPageState(Number(pageParam));
- }, []);
  
-
+// Progress bar
 useEffect(() => {
   let interval: NodeJS.Timeout;
 

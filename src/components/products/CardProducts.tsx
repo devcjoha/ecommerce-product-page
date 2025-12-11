@@ -1,14 +1,11 @@
 import Image from "next/image";
 import imageFallback from "@/public/image-fallback.svg"
-// import { useParams } from "next/navigation";
 
 import Link from "next/link";
 import { useProducts } from "@/src/context/ProductsContext";
 
-
 function CardProduct(){
  const { products } = useProducts();
-
  
   return(
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-6">
